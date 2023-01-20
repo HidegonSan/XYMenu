@@ -1,0 +1,16 @@
+Author: Hidegon
+
+Version: # Plugin version
+    Major: 0
+    Minor: 0
+    Revision: 0
+
+Targets: # Low TitleId of games which are compatibles with this plugin (0 for all)
+
+Title: XY Menu
+
+Summary: Reproduction of old XY menu
+
+Description: This plugin reproduces the old XY menu with CTRPF
+
+Compatibility: Any
