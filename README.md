@@ -1,6 +1,6 @@
 # XY Menu
 
-This plugin reproduces the old XY menu with CTRPF
+This plugin reproduces the old XY menu with CTRPF  
 Original is [here](https://github.com/44670/NTR)
 
 ## Demo
