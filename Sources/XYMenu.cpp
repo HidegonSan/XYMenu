@@ -164,6 +164,11 @@ namespace CTRPluginFramework {
         // Process key event
         void Menu::_Update(void) {
             const int entry_count = this->_entries.size();
+
+            if (entry_count == 0) {
+                return;
+            }
+
             const u32 pressed_key = Controller::GetKeysPressed();
 
             if (pressed_key & Key::DPadUp) {
@@ -194,6 +199,10 @@ namespace CTRPluginFramework {
             screen.DrawRect(0, 0, 320, 240, Color::White);
             DrawNTRFont(screen, "Game Plugin Config", 10, 10, Color::Red, Color::White, false);
             DrawNTRFont(screen, /* "http://44670.org/ntr" */ "https://github.com/HidegonSan/XYMenu", 10, 220, Color::Blue, Color::White, false);
+
+            if (entry_count == 0) {
+                return;
+            }
 
             int draw_start_index = (this->_selecting_index / 10)*10; // 10 = Max captions
             int draw_end_index = draw_start_index + 10;
