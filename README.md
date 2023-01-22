@@ -17,4 +17,6 @@ menu->Entry("Max Money", "Set the money to 999999", MaxMoney);
 while (true) {
     menu->Run();
 }
+
+delete menu;
 ```
